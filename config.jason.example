@@ -1,0 +1,7 @@
+{
+  "api_key": "tu_api_key_aqui",
+  "base_id": "tu_base_id_aqui",
+  "table_id": "tu_table_id_aqui",
+  "sheet_id": "tu_sheet_id_aqui",
+  "credentials_file": "ruta_a_tu_archivo_credentials.json"
+}
