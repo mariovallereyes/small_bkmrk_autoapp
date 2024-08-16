@@ -1,7 +1,7 @@
 {
-  "api_key": "tu_api_key_aqui",
-  "base_id": "tu_base_id_aqui",
-  "table_id": "tu_table_id_aqui",
-  "sheet_id": "tu_sheet_id_aqui",
-  "credentials_file": "ruta_a_tu_archivo_credentials.json"
+  "AIRTABLE_API_KEY": "tu_api_key_de_airtable",
+  "BASE_ID": "tu_base_id_de_airtable",
+  "TABLE_ID": "tu_table_id_de_airtable",
+  "SHEET_ID": "tu_sheet_id_de_google_sheets",
+  "CREDENTIALS_FILE": "ruta_a_tu_archivo_credentials.json"
 }
