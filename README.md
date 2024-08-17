@@ -100,7 +100,16 @@ cd small_bkmrk_autoapp
     **NOTA:** En la tabla, el campo Theme Name usa las categorías existentes actualmente en el código de `main.py`. El usuario podrá cambiar ests categorías para personalizar su organización de bookmarks tanto en Airtable como en `main.py`
 
 2. **Google Sheets**
-    - En la nueva [Google Sheet](https://sheets.google.com/) creada o copiada del archivo `google-sheets-structure.csv` están los encabezados que interactúan con `main.py`  
+    - En la nueva [Google Sheet](https://sheets.google.com/) creada o copiada del archivo `google-sheets-structure.csv` están los encabezados que interactúan con `main.py`
+       
+
+  
+      -
+      | Created Date and Time | Gmail Account | Subject              | URL | Tweet Text     | Attachment | Procesado |
+      | --------------------- | ------------- | -------------------- | --- | -------------- | ---------- | --------- |
+      | Fecha y Hora          | Gmail User    | YOUR_SUBJECT_KEYWORD | URL | Texto de Gmail | URL Drive  | Yes/No    |
+      -
+
     - Este documento en Google Sheets interactúa con Gmail y con el script de Python, no interactúa directamente con la tabla de [Airtable](https://airtable.com/) para efectos de este experimento de triangulación automatizada
     - El app script de Google dentro de este Google Sheet (disponible en este repositorio como `google_sheets_script.gs`) usa "YOUR_SUBJECT_KEYWORD" como el subject para identificar y procesar correos con ese texto.
     - El usuairo debe copiar y pegar el código en `google_sheets_script.gs` en la consola de Extensions (Extensiones), en la opción App Script del documento Google Sheets creado.
