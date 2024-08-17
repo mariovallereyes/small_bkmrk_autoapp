@@ -1,4 +1,4 @@
-# small_bkmrk_autoapp 📑
+# Twitter Bookmark Automation 📑
 
 ## *Introducción*
 
