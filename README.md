@@ -12,3 +12,26 @@ Este proyecto es ideal para quienes desean organizar sus bookmarks de Twitter de
 
 ### *Personalización*
 El flujo de trabajo presentado en este repositorio es totalmente personalizable, permitiendo que el usuario ajuste las reglas de procesamiento, categorías de los tuits/bookmarks y cómo se almacenan las imágenes adjuntas (en caso de que haya) según las necesidades.
+
+## Requisitos Previos 📋### Herramientas necesarias 🛠️-**Python 3.x**: Es necesario tener instalada una versión reciente de [Python](https://www.python.org/downloads/).
+-**Google Sheets y Gmail**: El proyecto requiere cuentas activas de Google con acceso a [Gmail](https://mail.google.com/) y [Google Sheets](https://www.google.com/sheets/about/).
+-**Airtable**: Una cuenta de [Airtable](https://airtable.com/) para crear la base donde se almacenarán los bookmarks.
+-**Google Cloud Console**: Es necesario configurar las credenciales de Google para que el script acceda a Google Sheets y Google Drive.
+
+### Cuentas y servicios a configurar 🌐1.**Google Cloud Console**:
+   - Habilitar las APIs de Google Sheets y Google Drive en un proyecto de [Google Cloud](https://console.cloud.google.com/).
+   - Generar y descargar el archivo `credentials.json` para que el script pueda acceder a los servicios de Google.
+
+2.**Airtable**:
+   - Crear una nueva base en Airtable con una tabla configurada según los encabezados del archivo CSV proporcionado en este repositorio.
+   - Generar una API Key en [Airtable](https://airtable.com/account) para que el script pueda autenticar sus solicitudes.
+
+### Bibliotecas y dependencias necesarias 📦1.**Instalación de dependencias**:
+   - Ejecutar el siguiente comando para instalar las dependencias desde el archivo `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Las principales bibliotecas incluidas son:
+     - `requests`: Para realizar solicitudes HTTP a la API de Airtable.
+     - `gspread`: Para interactuar con Google Sheets.
+     - `oauth2client`: Para gestionar las credenciales de Google.
