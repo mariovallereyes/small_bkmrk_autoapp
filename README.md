@@ -17,10 +17,10 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
 ## *Requisitos Previos* 📋
 
 ### *Herramientas necesarias* 🛠️
--**Python 3.x**: Es necesario tener instalada una versión reciente de [Python](https://www.python.org/downloads/).
--**Google Sheets y Gmail**: El proyecto requiere cuentas activas de Google con acceso a [Gmail](https://mail.google.com/) y [Google Sheets](https://www.google.com/sheets/about/).
--**Airtable**: Una cuenta de [Airtable](https://airtable.com/) para crear la base donde se almacenarán los bookmarks.
--**Google Cloud Console**: Es necesario configurar las credenciales de Google para que el script acceda a Google Sheets y Google Drive.
+-**Python 3.x**: Es necesario tener instalada una versión reciente de [Python](https://www.python.org/downloads/). 
+-**Google Sheets y Gmail**: El proyecto requiere cuentas activas de Google con acceso a [Gmail](https://mail.google.com/) y [Google Sheets](https://www.google.com/sheets/about/). 
+-**Airtable**: Una cuenta de [Airtable](https://airtable.com/) para crear la base donde se almacenarán los bookmarks. 
+-**Google Cloud Console**: Es necesario configurar las credenciales de Google para que el script acceda a Google Sheets y Google Drive. 
 
 ### *Cuentas y servicios a configurar* 🌐
 1.**Google Cloud Console**:
