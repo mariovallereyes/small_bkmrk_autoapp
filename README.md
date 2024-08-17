@@ -115,4 +115,16 @@ cd small_bkmrk_autoapp
     - El usuairo debe copiar y pegar el código en `google_sheets_script.gs` en la consola de Extensions (Extensiones), en la opción App Script del documento Google Sheets creado.
     - Se recomienda crear un trigger que automatice el script (dentro del menú en la consola de App Script) con un deployment "Time-Based" de entre ocho horas o una vez al día.
     - Una vez todo funcionando, no hay interacción alguna entre el usuario y el documento de Google Sheets.
+    
+---
 
+## 🐍 *Personalización y Adaptación del Script de Python* 
+1. **Airtable:**
+    - El usuario tendrá que reemplazar el valor `API_KEY` en `main.py` con su propia clave de API en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
+    - También el usuario deberá obtener el `BASE_ID`y el `TABLE_ID` desde la URL de la tabla en Airtable y reemplazar dichos valores en `main.py`. Estos identificadores son necesarios para que el script de Python interactúe con la base y tabla correctas.
+    - Si se desea modificar las categorías (Theme Names) en Airtable, esta modificación no solo debe hacerse en Airtable sino también en `main.py`.
+2. **Google Sheets**
+    - El usuario tiene que reemplazar el valor `SHEET_ID` en `main.py` con el identificador único de su google Sheet. Este ID se encuentra en la URL de la hoja de cálculo y está compuesto por varios caracteres alfanuméricos.  
+3. **Google Cloud**
+    - Es necesario descargar el archivo de credenciales JSON desde la consola de [Google Cloud](https://console.cloud.google.com/) y asegurarse que la ruta a este archvo una vez descargado sea correcta en la variable `CREDENTIALS_FILE`.
+  
