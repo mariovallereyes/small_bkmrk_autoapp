@@ -42,3 +42,28 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
      - `requests`: Para realizar solicitudes HTTP a la API de Airtable.
      - `gspread`: Para interactuar con Google Sheets.
      - `oauth2client`: Para gestionar las credenciales de Google.
+    
+---
+
+## *Configuración Inicial* ⚙️
+
+### *Clonar el Repositorio* 🗂️
+Primero es necesario clobar este repositorio en el entorno loocal del usuario:
+```bash
+git clone https://github.com/mariovallereyes/small_bkmrk_autoapp.git  
+cd small_bkmrk_autoapp
+```
+
+### *Configurar y obtener credenciales* 🔑
+1. **API Key de Airtable:**
+    - Generar una API Key en el website de [Airtable](https://airtable.com/)
+    - Insertar la API Key en el archivo `config.json`.
+2. **Credenciales JSON de Google Cloud:**
+    - Crear un proyecto nuevo en la consola de [Google Cloud](https://console.cloud.google.com/).  
+    - Habilitar las APIs necesarias para [Google Sheets](https://www.google.com/sheets/about/) y [Google Drive](https://drive.google.com/).
+    - Generar un archivo de credenciales JSON para la cuenta de servicio.
+    - Descargar y colocar ese archivo en el directorio del proyecto, actualizando el archivo `config.json` con la ruta correcta.
+
+### **Preparar los Entornos:** 🛠️
+
+
