@@ -33,7 +33,7 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
    - Crear una nueva base en Airtable con una tabla configurada según los encabezados del archivo CSV proporcionado en este repositorio.
    - Generar una API Key en [Airtable](https://airtable.com/account) para que el script pueda autenticar sus solicitudes.
 
-### 📦 Bibliotecas y dependencias necesarias 
+### 📦 *Bibliotecas y dependencias necesarias*  
 1.**Instalación de dependencias**:
    - Ejecutar el siguiente comando para instalar las dependencias desde el archivo `requirements.txt`:
      ```bash
