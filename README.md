@@ -80,6 +80,20 @@ cd small_bkmrk_autoapp
 
 -**Airtable**:
    - Crear una base nueva (cuenta gratis es suficiente) y configurar una tabla siguiendo los encabezados en el archivo `Main Table - Airtable Bookmarks.csv`.  
-     
+    
+---
 
+## 🏗️ *Creación de Estructuras* 
+1. **Airtable:**
+    - Crear una nueva base en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
+    - La estrcutura de la tabla que interactúa con el script de Python está en el archivo `Main Table - Airtable Bookmarks.csv` de este repositorio
+    - Los tipos de entrada (Field Type) de Airtable para cada encabezado tienen que ser seleccionados y confirmados en Airtable:
+          - Handle (Tipo de entrada: Single Line Text)
+          - Name (Tipo de entrada: Single Line Text)
+          - Tweet Text (Tipo de entrada: Long Text)
+          - Theme Name (Tipo de entrada: Single Select)
+          - Tags (Tipo de entrada: Multiple Select)
+          - URL (Tipo de entrada: URL)
+          - Attachment (Tipo de entrada: Attachment)
+          - Created Date and Time (Tipo de entrada: Created Time)
 
