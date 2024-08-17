@@ -9,7 +9,7 @@ Este proyecto es mi primer submission en Github y un pequeño experimento que ex
 Automatiza los bookmarks de tweets con **Airtable**, **Google Sheets** y **Python** para rastrear, categorizar y almacenar contenido de Twitter junto con los archivos adjuntos. Obtén ideas organizadas y accesibles de tus bookmarks con el mínimo esfuerzo, todo sin necesidad de pagar el acceso a la API de X ni una membresía para organizar marcadores en carpetas.
 
 ### *Utilidad*
-Este proyecto es ideal para quienes desean organizar sus bookmarks de Twitter de manera automática y sin la necesidad de pagar por la API de X o por suscripciones premium. Con esta solución, puedes guardar contenido relevante, incluyendo imágenes, en **Airtable** de manera organizada, accesible y con un mínimo esfuerzo a través de **Gmail**.
+Este proyecto creo que será útil para quienes desean organizar sus bookmarks de Twitter de manera automática y sin la necesidad de pagar por la API de X o por la suscripciones premium. Con esta solución, es posible guardar contenido relevante, incluyendo imágenes, en **Airtable** de manera organizada, accesible y con un mínimo esfuerzo a través de **Gmail**.
 
 ### *Personalización*
 El flujo de trabajo presentado en este repositorio es totalmente personalizable, permitiendo que el usuario ajuste las reglas de procesamiento, categorías de los tuits/bookmarks y cómo se almacenan las imágenes adjuntas (en caso de que haya) según las necesidades.
@@ -118,15 +118,19 @@ cd small_bkmrk_autoapp
     
 ---
 
-## 🐍 *Personalización y Adaptación del Script de Python* 
-El usuario debe configurar el proyecto a través del archivo config.jason (existe un ejemplo de tal archivo en este repositorio bajo el nombre `config.json.ejemplo`. El archivo de configuración contendrá todas las credenciales y configuraciones necesarias para que `main.py`(el script de Python) funcione correctamente. No es necesario modificar el código directo de `main.py`.  
+## 🐍 *Personalización en el Script de Python y en el Script de Google Sheets* 
+El usuario debe configurar el proyecto a través del archivo config.jason (existe un ejemplo de tal archivo en este repositorio bajo el nombre `config.json.ejemplo`. El archivo de configuración contendrá todas las credenciales y configuraciones necesarias para que `main.py`(el script de Python) funcione correctamente. No es necesario modificar el código directo de `main.py`. En la sección "Google Sheets" de la siguiente lista sí es necesario cambiar y modificar directamente el script de Google Sheets (`google_sheets_script.gs`). 
 
 1. **Airtable:**
     - El usuario tendrá que reemplazar el valor `API_KEY` en su archivo JSON de configuración con su propia clave de API en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
     - También el usuario deberá obtener el `BASE_ID`y el `TABLE_ID` desde la URL de la tabla en Airtable y reemplazar dichos valores en su propio archivo config.json. Estos identificadores son necesarios para que el script de Python interactúe con la base y tabla correctas.
     - La única excepción es que si se desea modificar las categorías (Theme Names) en Airtable, esta modificación no solo debe hacerse en Airtable sino también en `main.py`, porque dichas categorías no estarán en el archivo JSON.
 2. **Google Sheets**
-    - El usuario tiene que reemplazar el valor `SHEET_ID` en su propio archivo de configuración JSON con el identificador único de su google Sheet. Este ID se encuentra en la URL de la hoja de cálculo y está compuesto por varios caracteres alfanuméricos.  
+    - El usuario tiene que reemplazar el valor `SHEET_ID` en su propio archivo de configuración JSON con el identificador único de su Google Sheet. Este ID se encuentra en la URL de la hoja de cálculo y está compuesto por varios caracteres alfanuméricos.
+    - El usuario deberá reemplazar en el archivo `google_sheets_script.gs` la variable `YOUR_SUBJECT_KEYWORD` con el asunto (subject) que desea que el script busque en los correos de Gmail. Este será el filtro que el script utilizará para identificar los correos relevantes.
+    - Además, `YYYY/MM/DD` debe ser reemplazado por la fecha a partir de la cual desea buscar correos (en formato AÑO/MES/DÍA).
+    - Es necesario reemplazar `YOUR_FOLDER_NAME` también dentro del código de `google_sheets_script.gs` con el nombre de la carpeta en Google Drive donde desea almacenar los archivos adjuntos (imágenes). IMPORTANTE: Esta carpeta debe existir previamente en Google Drive.
 3. **Google Cloud**
     - Es necesario descargar el archivo de credenciales JSON desde la consola de [Google Cloud](https://console.cloud.google.com/) y asegurarse que la ruta a este archvo una vez descargado sea correcta en la variable `CREDENTIALS_FILE` de su propio archivo de configuración config.json.
-  
+    
+
