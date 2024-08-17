@@ -1,6 +1,6 @@
 # Twitter Bookmark Automation 📑
 
-## *Introducción*
+## *Introducción* 📘
 
 Este proyecto es un pequeño experimento que explora de manera sencilla la interacción entre **Twitter** (ahora X pero aquí le seguiremos llamando Twitter), **Gmail**, **Google Sheets** y **Airtable** para administrar y guardar bookmarks.
 
