@@ -1,4 +1,4 @@
-# small_bkmrk_autoapp 🚀
+# small_bkmrk_autoapp 📑
 
 ## *Introducción*
 
