@@ -102,7 +102,10 @@ cd small_bkmrk_autoapp
 2. **Google Sheets**
     - En la nueva [Google Sheet](https://sheets.google.com/) creada o copiada del archivo `google-sheets-structure.csv` están los encabezados que interactúan con `main.py`  
     - Este documento en Google Sheets interactúa con Gmail y con el script de Python, no interactúa directamente con la tabla de [Airtable](https://airtable.com/) para efectos de este experimento de triangulación automatizada
-    - El app script de Google dentro de este Google Sheet usa "YOUR_SUBJECT_KEYWORD" como el subject para identificar y procesar correos con ese texto. El usuario debe personalizarlo.
+    - El app script de Google dentro de este Google Sheet (disponible en este repositorio como `google_sheets_script.gs`) usa "YOUR_SUBJECT_KEYWORD" como el subject para identificar y procesar correos con ese texto.
+    - El usuairo debe copiar y pegar el código en `google_sheets_script.gs` en la consola de Extensions (Extensiones), en la opción App Script del documento Google Sheets creado.
+    - Se recomienda crear un trigger que automatice el script (dentro del menú en la consola de App Script) con un deployment "Time-Based" de entre ocho horas o una vez al día.
+    - Una vez todo funcionando, no hay interacción alguna entre el usuario y el documento de Google Sheets.
 
 
   
