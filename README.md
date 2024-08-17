@@ -49,7 +49,7 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
 ## ⚙️ *Configuración Inicial* 
 
 ### 🗂️ *Clonar el Repositorio* 
-Primero es necesario clobar este repositorio en el entorno loocal del usuario:
+Primero es necesario clonar este repositorio en el entorno loocal del usuario:
 ```bash
 git clone https://github.com/mariovallereyes/small_bkmrk_autoapp.git  
 cd small_bkmrk_autoapp
