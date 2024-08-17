@@ -15,8 +15,9 @@ Este proyecto es ideal para quienes desean organizar sus bookmarks de Twitter de
 El flujo de trabajo presentado en este repositorio es totalmente personalizable, permitiendo que el usuario ajuste las reglas de procesamiento, categorías de los tuits/bookmarks y cómo se almacenan las imágenes adjuntas (en caso de que haya) según las necesidades.
 
 ---
-![Flowchart](flowchart.png)
-
+<p align="center">
+  <img src="flowchart.png" alt="Flowchart">
+</p>
 ---
   
 ## 📋 *Requisitos Previos* 
