@@ -119,12 +119,14 @@ cd small_bkmrk_autoapp
 ---
 
 ## 🐍 *Personalización y Adaptación del Script de Python* 
+El usuario debe configurar el proyecto a través del archivo config.jason (existe un ejemplo de tal archivo en este repositorio bajo el nombre `config.json.ejemplo`. El archivo de configuración contendrá todas las credenciales y configuraciones necesarias para que `main.py`(el script de Python) funcione correctamente. No es necesario modificar el código directo de `main.py`.  
+
 1. **Airtable:**
-    - El usuario tendrá que reemplazar el valor `API_KEY` en `main.py` con su propia clave de API en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
-    - También el usuario deberá obtener el `BASE_ID`y el `TABLE_ID` desde la URL de la tabla en Airtable y reemplazar dichos valores en `main.py`. Estos identificadores son necesarios para que el script de Python interactúe con la base y tabla correctas.
-    - Si se desea modificar las categorías (Theme Names) en Airtable, esta modificación no solo debe hacerse en Airtable sino también en `main.py`.
+    - El usuario tendrá que reemplazar el valor `API_KEY` en su archivo JSON de configuración con su propia clave de API en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
+    - También el usuario deberá obtener el `BASE_ID`y el `TABLE_ID` desde la URL de la tabla en Airtable y reemplazar dichos valores en su propio archivo config.json. Estos identificadores son necesarios para que el script de Python interactúe con la base y tabla correctas.
+    - La única excepción es que si se desea modificar las categorías (Theme Names) en Airtable, esta modificación no solo debe hacerse en Airtable sino también en `main.py`, porque dichas categorías no estarán en el archivo JSON.
 2. **Google Sheets**
-    - El usuario tiene que reemplazar el valor `SHEET_ID` en `main.py` con el identificador único de su google Sheet. Este ID se encuentra en la URL de la hoja de cálculo y está compuesto por varios caracteres alfanuméricos.  
+    - El usuario tiene que reemplazar el valor `SHEET_ID` en su propio archivo de configuración JSON con el identificador único de su google Sheet. Este ID se encuentra en la URL de la hoja de cálculo y está compuesto por varios caracteres alfanuméricos.  
 3. **Google Cloud**
-    - Es necesario descargar el archivo de credenciales JSON desde la consola de [Google Cloud](https://console.cloud.google.com/) y asegurarse que la ruta a este archvo una vez descargado sea correcta en la variable `CREDENTIALS_FILE`.
+    - Es necesario descargar el archivo de credenciales JSON desde la consola de [Google Cloud](https://console.cloud.google.com/) y asegurarse que la ruta a este archvo una vez descargado sea correcta en la variable `CREDENTIALS_FILE` de su propio archivo de configuración config.json.
   
