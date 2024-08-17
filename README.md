@@ -107,9 +107,9 @@ cd small_bkmrk_autoapp
 
   
       -
-    | Created Date and Time | Gmail Account | Subject      | URL | Tweet Text     | Attachment | Procesado |
-    | --------------------- | ------------- | ------------ | --- | -------------- | ---------- | --------- |
-    | Fecha y Hora          | Gmail User    | AUTOBOOKMARK | URL | Texto de Gmail | URL Drive  | Yes/No    |
+      | Created Date and Time | Gmail Account | Subject      | URL | Tweet Text     | Attachment | Procesado |
+      | --------------------- | ------------- | ------------ | --- | -------------- | ---------- | --------- |
+      | Fecha y Hora          | Gmail User    | AUTOBOOKMARK | URL | Texto de Gmail | URL Drive  | Yes/No    |
 
 
 
