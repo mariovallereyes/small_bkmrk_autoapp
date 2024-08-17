@@ -72,7 +72,8 @@ cd small_bkmrk_autoapp
      pip install -r requirements.txt 
      ```
 -**Google Sheets**:
-   - Crear una hoja de Google Sheets con la estructura descrita en el archivo `google-sheets-structure.csv` en este repositorio.  
+   - Crear una hoja de Google Sheets con la estructura descrita en el archivo `google-sheets-structure.csv` en este repositorio.
+
 -**Airtable**:
    - Crear una base nueva (cuenta gratis es suficiente) y configurar una tabla siguiendo los encabezados en el archivo `Main Table - Airtable Bookmarks.csv`.  
      
