@@ -1,5 +1,5 @@
 # Twitter Bookmark Automation 📑
-### Por: Mario Valle Reyes (@bilbeny)
+Por: Mario Valle Reyes (@bilbeny)
 
 ## *Introducción* 📘
 
