@@ -104,7 +104,7 @@ cd small_bkmrk_autoapp
     - Este documento en Google Sheets interactúa con Gmail y con el script de Python, no interactúa directamente con la tabla de [Airtable](https://airtable.com/) para efectos de este experimento de triangulación automatizada
     - El app script de Google dentro de este Google Sheet usa "AUTOBOOKMARK" como el subject para identificar y procesar correos con ese texto.
   
-       
+      ---------------------   -------------   ------------   ---   --------------   ----------   ---------
     | Created Date and Time | Gmail Account | Subject      | URL | Tweet Text     | Attachment | Procesado |
     | --------------------- | ------------- | ------------ | --- | -------------- | ---------- | --------- |
     | Fecha y Hora          | Gmail User    | AUTOBOOKMARK | URL | Texto de Gmail | URL Drive  | Yes/No    |
