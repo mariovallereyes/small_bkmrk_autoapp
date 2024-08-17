@@ -103,8 +103,8 @@ cd small_bkmrk_autoapp
     - En la nueva [Google Sheet](https://sheets.google.com/) creada o copiada del archivo `google-sheets-structure.csv` están los encabezados que interactúan con `main.py`  
     - Este documento en Google Sheets interactúa con Gmail y con el script de Python, no interactúa directamente con la tabla de [Airtable](https://airtable.com/) para efectos de este experimento de triangulación automatizada
     - El app script de Google dentro de este Google Sheet usa "AUTOBOOKMARK" como el subject para identificar y procesar correos con ese texto.
-    
-        
+  
+       
     | Created Date and Time | Gmail Account | Subject      | URL | Tweet Text     | Attachment | Procesado |
     | --------------------- | ------------- | ------------ | --- | -------------- | ---------- | --------- |
     | Fecha y Hora          | Gmail User    | AUTOBOOKMARK | URL | Texto de Gmail | URL Drive  | Yes/No    |
