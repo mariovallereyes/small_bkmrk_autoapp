@@ -1,7 +1,7 @@
-# Twitter Bookmark Automation 📑
+# 📑 Twitter Bookmark Automation 
 Por: Mario Valle Reyes ([@bilbeny](https://www.x.com/bilbeny/))
 
-## *Introducción* 📘
+## 📘 *Introducción* 
 
 Este proyecto es un pequeño experimento que explora de manera sencilla la interacción entre **Twitter** (ahora X pero aquí le seguiremos llamando Twitter), **Gmail**, **Google Sheets** y **Airtable** para administrar y guardar bookmarks.
 
@@ -16,15 +16,15 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
 
 ---
   
-## *Requisitos Previos* 📋
+## 📋 *Requisitos Previos* 
 
-### *Herramientas necesarias* 🛠️
+### 🛠️ *Herramientas necesarias* 
 -**Python 3.x**: Es necesario tener instalada una versión reciente de [Python](https://www.python.org/downloads/).   
 -**Google Sheets y Gmail**: El proyecto requiere cuentas activas de Google con acceso a [Gmail](https://mail.google.com/) y [Google Sheets](https://www.google.com/sheets/about/).  
 -**Airtable**: Una cuenta de [Airtable](https://airtable.com/) para crear la base donde se almacenarán los bookmarks.  
 -**Google Cloud Console**: Es necesario configurar las credenciales de Google para que el script acceda a Google Sheets y Google Drive.  
 
-### *Cuentas y servicios a configurar* 🌐
+### 🌐 *Cuentas y servicios a configurar* 
 1.**Google Cloud Console**:
    - Habilitar las APIs de Google Sheets y Google Drive en un proyecto de [Google Cloud](https://console.cloud.google.com/).
    - Generar y descargar el archivo `credentials.json` para que el script pueda acceder a los servicios de Google.
@@ -33,7 +33,7 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
    - Crear una nueva base en Airtable con una tabla configurada según los encabezados del archivo CSV proporcionado en este repositorio.
    - Generar una API Key en [Airtable](https://airtable.com/account) para que el script pueda autenticar sus solicitudes.
 
-### Bibliotecas y dependencias necesarias 📦
+### 📦 Bibliotecas y dependencias necesarias 
 1.**Instalación de dependencias**:
    - Ejecutar el siguiente comando para instalar las dependencias desde el archivo `requirements.txt`:
      ```bash
@@ -46,16 +46,16 @@ El flujo de trabajo presentado en este repositorio es totalmente personalizable,
     
 ---
 
-## *Configuración Inicial* ⚙️
+## ⚙️ *Configuración Inicial* 
 
-### *Clonar el Repositorio* 🗂️
+### 🗂️ *Clonar el Repositorio* 
 Primero es necesario clobar este repositorio en el entorno loocal del usuario:
 ```bash
 git clone https://github.com/mariovallereyes/small_bkmrk_autoapp.git  
 cd small_bkmrk_autoapp
 ```
 
-### *Configurar y obtener credenciales* 🔑
+### 🔑 *Configurar y obtener credenciales* 
 1. **API Key de Airtable:**
     - Generar una API Key en el website de [Airtable](https://airtable.com/)
     - Insertar la API Key en el archivo `config.json`.
@@ -65,7 +65,7 @@ cd small_bkmrk_autoapp
     - Generar un archivo de credenciales JSON para la cuenta de servicio.
     - Descargar y colocar ese archivo en el directorio del proyecto, actualizando el archivo `config.json` con la ruta correcta.
 
-### **Preparar los Entornos:** 🛠️
+### 🛠️ **Preparar los Entornos:** 
 -**Python**:
    - La última versión de Python es necesaria. Instalar dependencias con:
      ```bash
