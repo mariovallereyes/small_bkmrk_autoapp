@@ -86,7 +86,7 @@ cd small_bkmrk_autoapp
 ## 🏗️ *Creación de Estructuras* 
 1. **Airtable:**
     - Crear una nueva base en [Airtable](https://airtable.com/) con una cuenta gratis (límite de 1000 entradas por base)
-    - La estrcutura de la tabla que interactúa con el script de Python está en el archivo `Main Table - Airtable Bookmarks.csv` de este repositorio
+    - La estructura de la tabla que interactúa con el script de Python está en el archivo `Main Table - Airtable Bookmarks.csv` de este repositorio
     - Los tipos de entrada (Field Type) de Airtable para cada encabezado tienen que ser seleccionados y confirmados en Airtable:  
           - Handle (Tipo de entrada: Single Line Text)  
           - Name (Tipo de entrada: Single Line Text)  
@@ -95,5 +95,18 @@ cd small_bkmrk_autoapp
           - Tags (Tipo de entrada: Multiple Select)  
           - URL (Tipo de entrada: URL)  
           - Attachment (Tipo de entrada: Attachment)  
-          - Created Date and Time (Tipo de entrada: Created Time)  
+          - Created Date and Time (Tipo de entrada: Created Time)
+
+    **NOTA:** En la tabla, el campo Theme Name usa las categorías existentes actualmente en el código de `main.py`. El usuario podrá cambiar ests categorías para personalizar su organización de bookmarks tanto en Airtable como en `main.py`
+
+2. **Google Sheets**
+    - En la nueva [Google Sheet](https://sheets.google.com/) creada o copiada del archivo `google-sheets-structure.csv` están los encabezados que interactúan con `main.py`  
+    - Este documento en Google Sheets interactúa con Gmail y con el script de Python, no interactúa directamente con la tabla de [Airtable](https://airtable.com/) para efectos de este experimento de triangulación automatizada
+    - El app script de Google dentro de este Google Sheet usa "AUTOBOOKMARK" como el subject para identificar y procesar correos con ese texto.
+      
+    | Created Date and Time | Gmail Account | Subject      | URL | Tweet Text     | Attachment | Procesado |
+    | --------------------- | ------------- | ------------ | --- | -------------- | ---------- | --------- |
+    | Fecha y Hora          | Gmail User    | AUTOBOOKMARK | URL | Texto de Gmail | URL Drive  | Yes/No    |
+
+
 
