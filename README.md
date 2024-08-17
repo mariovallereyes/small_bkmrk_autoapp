@@ -133,4 +133,19 @@ El usuario debe configurar el proyecto a través del archivo config.jason (exist
 3. **Google Cloud**
     - Es necesario descargar el archivo de credenciales JSON desde la consola de [Google Cloud](https://console.cloud.google.com/) y asegurarse que la ruta a este archvo una vez descargado sea correcta en la variable `CREDENTIALS_FILE` de su propio archivo de configuración config.json.
     
+---
+
+## 📧 *Formato del Correo Electrónico para Automatización* 
+Para que el script de Google Sheets procese correctamente la información contenida en el correo electrónico donde el usuario enviará el bookmark de Twitter, es necesario apegarse a un sencillo formato y pasos: 
+
+1. **Inicio del proceso**
+    - El usuario ve en su celular un tweet que le interesa.
+    - Si el tweet no contiene una imagen: El usuario envía a través de la función "share" de X el URL vía email con el formato descrito en el punto 2.
+    - Si el tweet contienen una imagen: El usuario copia el URL del tweet a través de la función "share" de X y envía LA IMÁGEN vía email a través de cualquier función "share" de su teléfono.
+2. **Formato Requerido**
+    - Subject: La palabra clave que se especificó en el script de Google Sheets para susutituir la variable `YOUR_SUBJECT_KEYWORD`.
+    - Primera línea: URL del tweet que se quiere guardar en Airtable.
+    - Segunda línea: En blanco (break). Esta línea en blanco es esencial para el buen funcionamiento del script.
+    - Tercera línea: Descripción deseada o texto del tweet.
+
 
